@@ -47,7 +47,8 @@ public class UserServiceImp implements IUserService {
 		long deptId = user.getDepartmentId();
 		
 		
-ResponseEntity<Department> response =	restTemplate.getForEntity("http://localhost:8181/api/v1/department/get/"+deptId, Department.class);
+ResponseEntity<Department> response =	
+restTemplate.getForEntity("http://localhost:8585/api/v1/department/get/"+deptId, Department.class);
 		
 		
 		Department dept =	response.getBody();
