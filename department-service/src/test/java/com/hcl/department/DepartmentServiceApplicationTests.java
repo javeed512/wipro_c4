@@ -10,4 +10,10 @@ class DepartmentServiceApplicationTests {
 	void contextLoads() {
 	}
 
+	@Test
+	void  doTest(){
+		
+		System.out.println("doTest");
+	}
+
 }
